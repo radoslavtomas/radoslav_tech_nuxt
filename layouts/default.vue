@@ -2,9 +2,9 @@
   <div>
     <div class="min-h-screen bg-gray-300 font-body">
       <header
-        class="w-full px-4 py-4 bg-gray-700 text-white shadow flex justify-between items-center"
+        class="w-full px-4 py-4 bg-gray-700 text-white shadow flex justify-between items-center flex-col md:flex-row"
       >
-        <h1>Radoslav Tomas</h1>
+        <h1 class="text-xl">Radoslav Tomas</h1>
         <div>
           <nuxt-link to="/">Home</nuxt-link>
           <nuxt-link to="/projects" class="ml-2">Projects</nuxt-link>
