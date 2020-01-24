@@ -68,10 +68,20 @@ export default {
           id: 'ftball',
           name: 'Football Slayer',
           description:
-            "Football. Just because I don't get it - doesn't mean I won't accept it. But what I refuse to accept are traffic jams before and after any match. This simple application emerged out of a frustration when commuting from Liverpool to Manchester and back. The main purpose is to track date and time of football matches near you so you can avoid traffic jams. <span class='text-teal-600'>#vue</span>",
+            "Football. I have to confess that I just don't get it. Although I accept its existence, I refuse to accept the traffic jams before and after any match. This simple application emerged out of a frustration when commuting from Liverpool to Manchester and back. The main purpose is to track date and time of football matches near you so you can avoid traffic jams. <span class='text-teal-600'>#vue</span>",
           links: {
             github: 'https://github.com/radoslavtomas/footballslayer',
             visit: 'https://footballslayer.com/'
+          }
+        },
+        {
+          id: 'flood',
+          name: 'Flood game',
+          description:
+            "I wrote this little game while learning flood algorithm. It was a fun project and also (sometimes most importantly) keeps children busy at least for a while. So one can have a conversation with friends or a nap (︶｡︶✽) <span class='text-teal-600'>#vue #algorithm</span>",
+          links: {
+            github: 'https://github.com/radoslavtomas/flood-game',
+            visit: 'https://floodgame.radoslav.tech/'
           }
         },
         {

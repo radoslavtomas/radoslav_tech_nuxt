@@ -8,7 +8,7 @@
 
     <div class="mt-6 md:mt-12 font-light">
       <p>Custom solutions in a simple and clean way.</p>
-      <p>I specialize in the Laravel framework on the backend, Vue.js on the frontend.</p>
+      <p>I specialise in the Laravel framework on the backend, Vue.js on the frontend.</p>
     </div>
 
     <div class="mt-4 font-light">
