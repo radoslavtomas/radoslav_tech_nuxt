@@ -3,13 +3,17 @@
     <h1 class="text-2xl mt-4 md:mt-8 lg:mt-16 mb-1 text-gray-700">Projects</h1>
     <h3 class="text-xs font-light mb-6 md:mb-12">Full-stack Web Development</h3>
     <div class="px-4 flex justify-center mb-6 md:mb-12">
-      <img class="w-7/12 md:w-5/12 lg:w-4/12" src="~/assets/img/functions.svg" alt="functions" />
+      <img
+        class="w-7/12 md:w-5/12 lg:w-4/12"
+        src="~/assets/img/functions.svg"
+        alt="functions"
+      />
     </div>
 
     <div
-      class="w-full md:w-1/2 mb-4 mx-auto text-left font-light border border-gray-300 shadow bg-gray-200 p-4 rounded"
       v-for="project in projects"
       :key="project.id"
+      class="w-full md:w-1/2 mb-4 mx-auto text-left font-light border border-gray-300 shadow bg-gray-200 p-4 rounded"
     >
       <a :href="project.links.visit" target="_blank">
         <h3 class="text-xl font-bold">{{ project.name }}</h3>
@@ -17,23 +21,26 @@
       <p v-html="project.description"></p>
       <div class="flex justify-start mt-4">
         <a
+          v-if="project.links.visit"
           class="text-blue-500 mr-3"
           target="_blank"
           :href="project.links.visit"
-          v-if="project.links.visit"
-        >visit</a>
+          >visit</a
+        >
         <a
+          v-if="project.links.github"
           class="text-blue-500 mr-3"
           target="_blank"
           :href="project.links.github"
-          v-if="project.links.github"
-        >github</a>
+          >github</a
+        >
         <a
+          v-if="project.links.docs"
           class="text-blue-500 mr-3"
           target="_blank"
           :href="project.links.docs"
-          v-if="project.links.docs"
-        >docs</a>
+          >docs</a
+        >
       </div>
     </div>
   </div>
@@ -81,7 +88,7 @@ export default {
             "I wrote this little game while learning flood algorithm. It was a fun project and also (sometimes most importantly) keeps children busy at least for a while. So one can have a conversation with friends or a nap (︶｡︶✽) <span class='text-teal-600'>#vue #algorithm</span>",
           links: {
             github: 'https://github.com/radoslavtomas/flood-game',
-            visit: 'https://floodgame.radoslav.tech/'
+            visit: 'https://floodgame.rdslv.com/'
           }
         },
         {
@@ -120,8 +127,7 @@ export default {
           description:
             'This is a visible part of my professional work. Quoting system made to measure for Quoteline Direct insurance broker. <span class="text-teal-600">#laravel #vue</span>',
           links: {
-            visit:
-              'https://myquotesv4.quotelinedirect.co.uk/PC/your-details?B=INQQ&R=INQL&RAF='
+            visit: 'https://quickbuyv3.quotelinedirect.co.uk/PC'
           }
         },
         {
@@ -139,6 +145,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
